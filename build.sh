@@ -9,8 +9,8 @@ cd ..
 WORK_DIR=$PWD
 
 rm -rf dev-mysql
+rm -rf dev-java-lib
 rm -rf dev-ldap-apache-server
-rm -rf dev-sonarqube-server
 
 git clone git@github.com:guidomantilla/dev-mysql.git
 echo ""
