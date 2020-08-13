@@ -16,6 +16,20 @@ services:
     networks:
       - dev-network
 
+  dev-ibmmq:
+    build:
+      context: ../dev-ibmmq/
+    image: dev-ibmmq
+    container_name: dev-ibmmq
+    restart: always
+    environment:
+      MQ_APP_PASSWORD: r00t123!+
+    ports:
+      - 1414:1414
+      - 9443:9443
+    networks:
+      - dev-network
+
   dev-ldap-apache:
     build:
       context: ../dev-ldap-apache/
