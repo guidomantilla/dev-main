@@ -1,7 +1,9 @@
 echo "" && echo "##### LIMPIANDO AMBIENTE DOCKER LOCAL #####" && echo ""
 docker container rm --force dev-mysql
-docker container rm --force dev-ldap-apache-server
-docker container rm --force dev-sonarqube-server
+docker container rm --force dev-ibmmq
+docker container rm --force dev-activemq
+docker container rm --force dev-ldap-apache
+docker container rm --force dev-sonarqube
 docker network rm dev-network
 
 echo "" && echo "##### DESCARGANDO PROYECTOS GITHUB #####" && echo ""
