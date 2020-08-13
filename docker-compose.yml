@@ -30,6 +30,19 @@ services:
     networks:
       - dev-network
 
+  dev-activemq:
+    build:
+      context: ../dev-activemq/
+    image: dev-activemq
+    container_name: dev-activemq
+    restart: always
+    ports:
+      - 8161:8161
+      - 61616:61616
+      - 61613:61613
+    networks:
+      - dev-network
+
   dev-ldap-apache:
     build:
       context: ../dev-ldap-apache/

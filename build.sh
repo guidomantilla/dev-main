@@ -11,6 +11,7 @@ WORK_DIR=$PWD
 rm -rf dev-java-lib
 rm -rf dev-mysql
 rm -rf dev-ibmmq
+rm -rf dev-activemq
 rm -rf dev-ldap-apache
 rm -rf dev-sonarqube
 
@@ -22,6 +23,9 @@ git clone https://github.com/guidomantilla/dev-mysql
 
 echo ""
 git clone https://github.com/guidomantilla/dev-ibmmq
+
+echo ""
+git clone https://github.com/guidomantilla/dev-activemq
 
 echo ""
 git clone https://github.com/guidomantilla/dev-ldap-apache
