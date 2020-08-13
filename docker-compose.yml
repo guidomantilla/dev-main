@@ -28,7 +28,9 @@ services:
       - dev-network
 
   dev-sonarqube:
-    image: sonarqube:8.3-community
+    build:
+      context: ../dev-sonarqube/
+    image: dev-sonarqube
     container_name: dev-sonarqube
     restart: always
     ports:
