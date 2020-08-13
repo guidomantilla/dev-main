@@ -8,15 +8,18 @@ echo "" && echo "##### DESCARGANDO PROYECTOS GITHUB #####" && echo ""
 cd ..
 WORK_DIR=$PWD
 
-rm -rf dev-mysql
 rm -rf dev-java-lib
-rm -rf dev-ldap-apache-server
+rm -rf dev-mysql
+rm -rf dev-ldap-apache
+rm -rf dev-sonarqube
 
 git clone git@github.com:guidomantilla/dev-mysql.git
 echo ""
 git clone https://github.com/guidomantilla/dev-java-lib
 echo ""
-git clone https://github.com/guidomantilla/dev-ldap-apache-server
+git clone https://github.com/guidomantilla/dev-ldap-apache
+echo ""
+git clone https://github.com/guidomantilla/dev-sonarqube
 
 echo "" && echo "##### PROYECTOS DESCARGADOS: #####"  && echo ""
 echo "$(ls -h)"
